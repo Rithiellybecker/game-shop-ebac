@@ -6,7 +6,9 @@
 
 header h1,
 /*alterar estilo da fonte corretamente*/
-section h2 {
+section h2,
+section h3,
+form button {
     font-family: 'Bungee' cursive;
 }
 
@@ -21,7 +23,8 @@ header {
 }
 
 header h1,
-section h2 {
+section h2,
+section h3 {
     font-weight: normal;
 }
 
@@ -66,7 +69,7 @@ section {
     padding: 24px 0;
 }
 
-section h2 {
+section h2, section h3 {
     margin-bottom: 16px;
     color: #182c61;
 }
@@ -85,12 +88,22 @@ section p {
     height: 24px;
 }
 
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
 #contact .container {
     display: block;
 }
 
 .contact-methods {
     display: flex;
+    justify-content: space-between;
 }
 
 form input,
@@ -101,6 +114,18 @@ form button {
     margin-bottom: 8px;
     padding: 8px;
 }
-form textarea{
-    resize: none; /*usado para impedir que a caixa de texto se expanda */
+
+form textarea {
+    resize: none;
+    /*usado para impedir que a caixa de texto se expanda */
+}
+section h3{
+    margin-bottom: 16px;
+}
+
+form button{
+    background-color: #182c61;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
